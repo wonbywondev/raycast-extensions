@@ -4,10 +4,6 @@ import { existsSync } from "fs";
 import { homedir } from "os";
 import { join } from "path";
 
-interface Preferences {
-  cmuxPath: string;
-}
-
 export interface Workspace {
   ref: string;
   index: number;
@@ -101,7 +97,7 @@ export function openWorkspace(cwd: string): string {
 /**
  * cmux가 꺼진 상태에서 경로를 엽니다.
  * open -a로 앱을 즉시 실행(~0.85초 내 소켓 준비),
- * 100ms 간격으로 new-workspace를 폴링하여 소켓 올라오면 바로 생성합니다.
+ * 10ms 간격으로 new-workspace를 폴링하여 소켓 올라오면 바로 생성합니다.
  */
 const CMUX_SOCKET_PATH = join(
   homedir(),

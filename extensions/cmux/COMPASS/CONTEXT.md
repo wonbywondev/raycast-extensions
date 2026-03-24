@@ -120,7 +120,7 @@ end tell
 | 2026-03-20 | cmux OFF 속도 최적화 | `existsSync(socketPath)` 가드 추가 | CLI는 소켓 없을 때 2.5초 연결 타임아웃 대기. 소켓 파일 존재 확인으로 ~0ms 스킵 가능. 폴링 주기 50ms 유지 |
 | 2026-03-24 | List 자동 갱신 | 2초 interval 폴링 | useCachedPromise에 revalidateOnFocus/interval 옵션 없음. useEffect + setInterval(revalidate, 2000)으로 해결. cmux OFF 시 existsSync 가드로 폴링 비용 ~0ms |
 | 2026-03-24 | 오프라인 태그 제거 | 캐시 데이터 항상 표시 | 사용자 요청. 오프라인/온라인 구분 UI 불필요. 캐시 있으면 cmux 상태 무관하게 목록 표시 |
-| 2026-03-24 | 스토어 제출 차단 이슈 | 미해결 | ESLint 설정 파일 누락 + Prettier 포맷 오류 + Title Case 경고. 해결 후 npm run publish 재시도 필요 |
+| 2026-03-24 | 스토어 제출 | PR #26595 생성 완료 | Greptile 자동 리뷰 코멘트 3건: CHANGELOG 날짜 placeholder, JSDoc 폴링 주석, Preferences 인터페이스 중복 정의 |
 
 ---
 

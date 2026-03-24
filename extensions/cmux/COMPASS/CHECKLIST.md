@@ -71,10 +71,12 @@
 - [x] 스크린샷 3장 (media/)
 - [x] author wonbywondev, keywords 추가
 - [x] 아이콘 (cmux 앱 아이콘 사용)
-- [ ] 스토어 제출 (`npm run publish`) — 다음 이슈 해결 후
-  - [ ] ESLint 설정 파일 (.eslintrc.js) 누락
-  - [ ] Prettier 포맷 오류 (3개 소스 파일)
-  - [ ] Title Case 경고: "Cmux", "List Cmux Workspaces", "Open in Cmux"
+- [x] 스토어 제출 PR 생성 (https://github.com/raycast/extensions/pull/26595)
+- [x] PR 리뷰 코멘트 반영 (Greptile 자동 리뷰)
+  - [x] CHANGELOG.md 날짜 → `{PR_MERGE_DATE}` placeholder
+  - [x] utils.ts JSDoc 폴링 주석 100ms → 10ms 수정
+  - [x] utils.ts 수동 `Preferences` 인터페이스 제거 (raycast-env.d.ts 전역 타입 사용)
+- [ ] Raycast 팀 최종 승인 대기
 
 ## 핵심 참고 정보
 | 항목 | 값 |
